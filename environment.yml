@@ -1,0 +1,11 @@
+name: xatu
+channels:
+  - defaults
+  - pytorch
+dependencies:
+  - python=3.8
+  - pip
+  - matplotlib
+  - pytorch
+  - numpy
+  - jsons
