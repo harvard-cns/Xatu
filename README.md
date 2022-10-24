@@ -6,6 +6,10 @@ Anonymous code repository for Xatu.
 - Python 3.8 (Anaconda installation recommended)
 - See `environment.yml` for a list of Python library dependencies
 
+## Dataset
+- `xatu_train/val/test_all_feats_and_labels.pt`: {'feats_real':(# of datapoints, # of time slots, # of features), 'labels':[label for datapoint 1, label for datapoint 2, ..., label for datapoint n]}. This dataset is for machine learning.
+- `xatu_data_val/test.json`: [dict for datapoint 1, dict for datapoint 2, ..., dict for datapoint n], each dict include under_attack_index, anomaly_start, attack_traffic, legit_traffic. This dataset is for evaluating effectiveness and overhead.
+
 ## How to run Xatu?
 ```
 $ python run.py
